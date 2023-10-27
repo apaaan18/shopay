@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<body>
 	<style>
 	
@@ -86,8 +87,7 @@
 			display: flex;
 		}
 		.checkout {
-			width: 350px;
-			margin-left: 10px;
+			flex: 1;
 			box-shadow: 1px 1px 10px gray;
 		}
 		.bun {
@@ -96,6 +96,76 @@
 			margin-top: 10px;
 			font-weight: bold;
 			font-size: 20px;
+		}
+		@media screen and (max-width: 600px)
+		{
+		img {
+			height: 50px;
+			width: 50px;
+		}
+		.left {
+			font-size: 40px;
+			font-family: arial;
+			margin-bottom: 40px;
+			display: flex;
+			justify-content: center;
+		}
+		.home {
+			text-decoration: none;
+			color: black;
+		}
+		.js-but {
+			gap: 10px;
+		}
+		.home:hover {
+			color: orange;
+		}
+		body {
+			font-family: arial;
+		}
+		.delivery {
+			color: green;
+			font-size: 10px;
+			font-weight: bold;
+		}
+		.product {
+			font-weight: bold;
+			font-size: 10px;
+		}
+		.price {
+			color: #f26d07;
+			margin-top: 5px;
+			font-weight: bold;
+		}
+		.price, .quantity, .nug{
+			font-size: 5px;
+		}
+		.container {
+			box-shadow: 1px 1px 10px gray;
+			border-width: 1px;
+			width: 150px;
+			margin: 0;
+		}
+		.huh {
+			display: flex;
+			justify-content: center;
+		}
+		.buang {
+			display: flex;
+		}
+		.nug a{
+			text-decoration: none;
+		}
+		.nug a:hover {
+			text-decoration: underline;
+		}
+		.checkout {
+			flex: 1;
+			box-shadow: 1px 1px 10px gray;
+			display: flex;
+			height: 40px;
+			margin-top: 20px;
+			justify-content: center;
 		}
 	</style>
 	<div class="left">
@@ -161,11 +231,11 @@
 			</div>
 		</div>
 	</div>
+	</div>
 	<div class="checkout">
 		<div class="bun">
 			<span>Checkout</span>
 		<div>
-	</div>
 	</div>
 	<script src="js.js">
 		

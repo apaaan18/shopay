@@ -143,7 +143,7 @@
 		}
 		.qty a{
 			text-decoration: none;
-			color:white;
+			color: white;
 		}
 		footer {
 			display: flex;
@@ -157,6 +157,8 @@
 			.search input {
 				width: 150px;
 				margin-top: 15px;
+				height: 20px;
+				margin-left: 30px;
 			}
 			cart {
 				width: 50px;
@@ -175,12 +177,12 @@
 			}
 			.qty {
 				position: absolute;
-				right: 55px;
+				right: 60px;
 				top: 29px;
 			}
 			.msg {
 				position: absolute;
-				right: 15px;
+				right: 20px;
 				top: 29px;
 			}
 			.msg , .qty {
@@ -188,7 +190,29 @@
 				padding: 2px;
 				width: 10px;
 			}
-		}
+			.container {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				height: 290px;
+				justify-content: center;
+				padding-right: 20px;
+			}
+			.wrapper {
+				box-shadow: 1px 1px 10px gray;
+				width: 150px;
+				height: 270px;
+				padding-top: 10px;
+			}
+			.product-image{
+				width: 150px;
+				justify-content: center;
+				display: flex;
+				margin-bottom: 25px;
+			}
+			.product-image img{
+				height: 100px;;
+				width: 96%;
+			}
 	</style>
 	<div class="header">
 		<div class="left">
@@ -208,8 +232,6 @@
 		
 	</div>
 	
-	
-	<footer>All rights reserved</footer>
 	<script src="js.js">
 	
 	
