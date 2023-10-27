@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	<head>
+		<title>ShoPay</title>
+	</head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		body {
+			font-family: arial;
+		}
+		.container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			margin-top: 40px;
+			margin-left: 20px;
+			height: 900px;
+		}
+		.wrapper {
+			box-shadow: 1px 1px 10px gray;
+			width: 200px;
+			height: 270px;
+			padding-top: 10px;
+		}
+		.product-image{
+			width: 200px;
+			justify-content: center;
+			display: flex;
+			margin-bottom: 25px;
+		}
+		.product-image img{
+			height: 100px;;
+			width: 90%;
+		}
+		button {
+			width: 100px;
+			border-radius: 30px;
+			border-style: none;
+			background-color: yellow;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			padding: 10px;
+		}
+		.price {
+			font-size: 15px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			color: #f26d07;
+		}
+		.name, .price, .quantity {
+			padding-left: 10px;
+		}
+		.button {
+			display: flex;
+			width: 100%;
+			align-items: center;
+			justify-content: center;
+		}
+		.header {
+			display: flex;
+			height: 60px;
+			align-items: center;
+		}
+		.search {
+			width: 325px;
+		}
+		.search input {
+			width: 290px;
+			margin-left: 20px;
+			height: 30px;
+			border-radius: 50px;
+			border-style: solid;
+			border-width: 1px;
+			padding-left: 10px;
+		}
+		.search input:focus {
+			outline: none;
+		}
+		.cart {
+			width: 200px;
+			display: flex;
+		}
+		.fa-cart-plus {
+			padding-left: 100px;
+			color: black;
+			font-size: 25px;
+			position: relative;
+		}
+		.fa-message {
+			font-size: 25px;
+			padding-left: 30px;
+			position: relative;
+		}
+		.msg {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			color: white;
+			background-color: red;
+			border-radius: 10px;
+			width: 20px;
+			display: flex;
+			justify-content: center;
+			padding: 2px;
+			font-size: 12px;
+		}
+		.left {
+			flex: 1;
+		}
+		.qty {
+			position: absolute;
+			top: 15px;
+			right: 70px;
+			color: white;
+			background-color: red;
+			width: 20px;
+			display: flex;
+			justify-content: center;
+			border-radius: 10px;
+			padding: 2px;
+			font-size: 12px;
+		}
+		.left {
+			font-size: 40px;
+			font-family: arial;
+			padding-left: 10px;
+		}
+		.msg-a {
+			text-decoration: none;
+			color: black;
+		}
+		button:hover {
+			background-color: green;
+			cursor: pointer;
+		}
+		.home {
+			text-decoration: none;
+			color: black;
+		}
+		.home:hover {
+			color: orange;
+		}
+		.qty a{
+			text-decoration: none;
+			color:white;
+		}
+		footer {
+			display: flex;
+			justify-content: center;
+		}
+	</style>
+	<div class="header">
+		<div class="left">
+			<a class="home" href="js-pract.html">ShoPay</a>
+		</div>
+		<div class="search">
+			<input placeholder="Search product">
+		</div>
+		<div class="cart">
+			<a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+			<a class="msg-a" href="message.html"><i class="fa-solid fa-message"></i></a>
+			<div class="qty js-qty"><a href="cart.html">0</a></div>
+			<div class="msg js-msg">3</div>
+		</div>
+	</div>
+	<div class="container js-cart">
+		
+	</div>
+	
+	
+	<footer>All rights reserved</footer>
+	<script src="js.js">
+	
+	
+	</script>
+	</body>
+</html>
