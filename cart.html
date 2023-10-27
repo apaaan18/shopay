@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	<style>
+	
+		img {
+			height: 150px;
+			width: 240px
+		}
+		.cont {
+			display: flex;
+			margin-top: 10px;
+		}
+		.prod {
+			display: flex;
+			flex-direction: column;
+			margin-left: 10px;
+		}
+		.left {
+			font-size: 40px;
+			font-family: arial;
+			margin-bottom: 60px;
+			display: flex;
+			justify-content: center;
+		}
+		.home {
+			text-decoration: none;
+			color: black;
+		}
+		.home:hover {
+			color: orange;
+		}
+		body {
+		font-family: arial;
+		}
+		.delivery {
+			color: green;
+			font-size: 17px;
+			font-weight: bold;
+			padding-left: 5px;
+		}
+		.product {
+			font-weight: bold;
+		}
+		.price {
+			color: #f26d07;
+			margin-top: 5px;
+			font-weight: bold;
+		}
+		.price, .quantity, .nug{
+			font-size: 15px;
+		}
+		.container {
+			box-shadow: 1px 1px 10px gray;
+			border-width: 1px;
+			width: 440px;
+			padding: 15px;
+		}
+		.img{
+			margin-left: 5px;
+		}
+		.buang {
+			display: flex;
+		}
+		.nug {
+			margin-left: 8px;
+			display: flex;
+			gap: 3px;
+		} 
+		.nug a{
+			text-decoration: none;
+		}
+		.nug a:hover {
+			text-decoration: underline;
+		}
+		.js-but {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			width: 1000px;
+		}
+		.container {
+			margin-left: 20px;
+			margin-bottom: 10px;
+		}
+		.huh {
+			display: flex;
+		}
+		.checkout {
+			width: 350px;
+			margin-left: 10px;
+			box-shadow: 1px 1px 10px gray;
+		}
+		.bun {
+			display: flex;
+			justify-content: center;
+			margin-top: 10px;
+			font-weight: bold;
+			font-size: 20px;
+		}
+	</style>
+	<div class="left">
+			<a class="home" href="js-pract.html">ShoPay</a>
+	</div>
+	<div class="huh">
+	<div class="js-but">
+		<div class="container">
+			<div class="delivery">Delivery date: Friday October 27</div>
+		<div class="cont">
+			<div>
+				<div class="img"><img src="shoes.png"></div>
+			</div>
+			<div class="prod">
+				<div class="product">Xtep Shoes Branded</div>
+				<div class="price">$299.99</div>
+				<div class="buang">
+					<div class="quantity">Quantity: 3</div>
+					<div class="nug">
+						<div><a href="#">Update</a></div>
+						<div><a class="del" href="#">Delete</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="container">
+			<div class="delivery">Delivery date: Saturday November 4</div>
+		<div class="cont">
+			<div>
+				<div class="img"><img src="Mac.jpg"></div>
+			</div>
+			<div class="prod">
+				<div class="product">Macbook</div>
+				<div class="price">$5999.99</div>
+				<div class="buang">
+					<div class="quantity">Quantity: 1</div>
+					<div class="nug">
+						<div><a href="#">Update</a></div>
+						<div><a class="del" href="#">Delete</a></div>
+				</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="container">
+			<div class="delivery">Delivery date: Thursday, November 8</div>
+		<div class="cont">
+			<div>
+				<div class="img"><img src="iWatch.jpg"></div>
+			</div>
+			<div class="prod">
+				<div class="product">iWatch</div>
+				<div class="price">$2999.99</div>
+				<div class="buang">
+					<div class="quantity">Quantity: 4</div>
+					<div class="nug">
+						<div><a href="#">Update</a></div>
+						<div><a class="del" href="#">Delete</a></div>
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="checkout">
+		<div class="bun">
+			<span>Checkout</span>
+		<div>
+	</div>
+	</div>
+	<script src="js.js">
+		
+	</script>
+	</body>
+</html>
