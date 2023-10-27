@@ -2,6 +2,7 @@
 <html>
 	<body>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>ShoPay</title>
 	</head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -147,6 +148,46 @@
 		footer {
 			display: flex;
 			justify-content: center;
+		}
+		@media screen and (max-width: 600px)
+		{
+			.home{
+				font-size: 20px;
+			}
+			.search input {
+				width: 150px;
+				margin-top: 15px;
+			}
+			cart {
+				width: 50px;
+			}
+			.fa-cart-plus, .fa-message {
+				font-size: 20px;
+				margin-left: 20px;
+				margin-top: 17px;
+				padding: 0;
+			}
+			.fa-cart-plus {
+				position: relative;
+			}
+			.fa-message {
+				position: relative;
+			}
+			.qty {
+				position: absolute;
+				right: 55px;
+				top: 29px;
+			}
+			.msg {
+				position: absolute;
+				right: 15px;
+				top: 29px;
+			}
+			.msg , .qty {
+				font-size: 10px;
+				padding: 2px;
+				width: 10px;
+			}
 		}
 	</style>
 	<div class="header">
