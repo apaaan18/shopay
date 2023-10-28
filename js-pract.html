@@ -64,6 +64,7 @@
 		}
 		.search {
 			width: 325px;
+			position: relative;
 		}
 		.search input {
 			width: 290px;
@@ -72,7 +73,12 @@
 			border-radius: 50px;
 			border-style: solid;
 			border-width: 1px;
-			padding-left: 10px;
+			padding-left: 35px;
+		}
+		.fa-magnifying-glass{
+			position: absolute;
+			left: 30px;
+			top: 9px;
 		}
 		.search input:focus {
 			outline: none;
@@ -151,62 +157,94 @@
 		}
 		@media screen and (max-width: 600px)
 		{
-			.home{
+			.left {
+				width: 100px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.home {
 				font-size: 20px;
 			}
-			.search input {
-				width: 150px;
-				margin-top: 15px;
-				height: 20px;
-				margin-left: 30px;
+			.search {
+				width: 200px;
+				margin-left: 0;
 			}
-			.name {
-				font-size: 13px;
-				height: 20px;
+			.search input{
+				width: 130px;
+				margin-left: 10px;
 			}
-			cart {
-				width: 50px;
-			}
-			.fa-cart-plus, .fa-message {
-				font-size: 20px;
-				margin-left: 20px;
-				margin-top: 17px;
+			.cart {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 0;
 				padding: 0;
 			}
-			.fa-cart-plus {
+			.a {
+				display: flex;
+				width: 45px;
 				position: relative;
-				width: 15px;
+				justify-content: center;
+				align-items: center;
+				height: 70px;
 			}
-			.fa-message {
+			.b {
+				display: flex;
 				position: relative;
+				width: 45px;
+				justify-content: center;
+				align-items: center;
 			}
-			.qty {
-				position: absolute;
-				right: 60px;
-				top: 29px;
+			.fa-cart-plus, .fa-message {
+				font-size: 25px;
+				margin-top: 17px;
+				padding: 0;
+				margin: 0;
 			}
-			.msg {
-				position: absolute;
-				right: 20px;
-				top: 29px;
-			}
-			.msg , .qty {
+			.a .qty {
 				font-size: 10px;
 				padding: 2px;
-				width: 10px;
+				position: absolute;
+				top: 14px;
+				right: 0;
+				width: 15px;
+			}
+			.b .msg {
+				font-size: 10px;
+				padding: 2px;
+				position: absolute;
+				top: -8px;
+				right: 0;
+				width: 15px;
+			}
+			.a .fa-cart-plus {
+				
+			}
+			.fa-cart-plus {
+				width: 40px;
+			}
+			.fa-message {
+				width: 40px;
+				padding-left: 10px;
 			}
 			.container {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
 				height: 290px;
 				justify-content: center;
-				padding-right: 20px;
+				padding-right: 10px;
+				margin-left: 10px;
 			}
 			.wrapper {
 				box-shadow: 1px 1px 10px gray;
 				width: 150px;
 				height: 270px;
 				padding-top: 10px;
+			}
+			.product:hover {
+				background-color: green;
+				color: white;
 			}
 			.product-image{
 				width: 150px;
@@ -225,12 +263,17 @@
 		</div>
 		<div class="search">
 			<input placeholder="Search product">
+			<i class="fa-solid fa-magnifying-glass"></i>
 		</div>
 		<div class="cart">
-			<a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
-			<a class="msg-a" href="message.html"><i class="fa-solid fa-message"></i></a>
-			<div class="qty js-qty"><a href="cart.html">0</a></div>
-			<div class="msg js-msg">3</div>
+			<div class="a">
+				<a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+				<div class="qty js-qty">0</div>
+			</div>
+			<div class="b">
+				<a class="msg-a" href="message.html"><i class="fa-solid fa-message"></i></a>
+				<div class="msg js-msg">3</div>
+			</div>
 		</div>
 	</div>
 	<div class="container js-cart">
